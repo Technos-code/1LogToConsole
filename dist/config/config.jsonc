@@ -1,0 +1,324 @@
+{
+    "Foregrips":{
+
+        //Tier-1 Foregrips Values add up to ten (7 ergo plus 3 better recoil = 10)
+        "5c1cd46f2e22164bef5cfedb": {   //Zenit rk-1 Canted Grip test new test
+            "Ergonomics": 5,
+            "Recoil": -5
+        },
+        "65169d5b30425317755f8e25": {  // Pillau P-2 Tac Foregrip Red
+            "Ergonomics": 6,
+            "Recoil": -4
+        },
+        "5cf4fb76d7f00c065703d3ac": {  // Pillau P-2 Tac Foregrip Black
+            "Ergonomics": 6,
+            "Recoil": -4
+        },
+        "5a7dbfc1159bd40016548fde":{  // Cqr spacegun Foregrip
+            "Ergonomics": 6,
+            "Recoil": -6
+        },
+        "5c1bc5af2e221602b412949b":{  // RK-2
+            "Ergonomics": -4,
+            "Recoil": -8
+        }/*,
+        "CCG_VERT_GRIP_2":{  // SAKO Vertical Foregrip OD - Moxopixel TGC
+            "Ergonomics": 6,
+            "Recoil": -4
+        },
+        "CCG_VERT_GRIP_2_BLK":{  // SAKO Vertical Foregrip - Moxopixel TGC
+            "Ergonomics": 6,
+            "Recoil": -4
+        }*/
+    },
+    "Suppressors":{
+        "638612b607dfed1ccb7206ba":{ //M4sdk supprressor
+            "Accuracy": 0,
+            "Recoil":-15,
+            "Loudness":-35 ,
+            "Ergonomics": 1,
+            "Velocity":0.6,
+            "HeatFactor":1.06,
+            "CoolFactor":1.2,
+            "DurabilityBurnModificator":1.25
+        },/*
+        "CCG_WRAPPED_SILENCER":{   // Wrapped .556 suppressor
+            "Accuracy": 0,
+            "Recoil":-21,
+            "Loudness":-16,
+            "Ergonomics": 0,
+            "Velocity":0.7,
+            "HeatFactor":1.1,
+            "CoolFactor":1.03,
+            "DurabilityBurnModificator":1.25
+        },*/
+        "5dfa3d2b0dee1b22f862eade":{   // QDC 7.62
+            "Recoil":-8,
+            "Loudness":-30,
+            "Velocity":1.09,
+            "HeatFactor": 0.977,
+            "CoolFactor": 1.06,
+            "DurabilityBurnModificator":1.12
+        },/*
+        "suppressor_qhb_standard_300blkR":{   // Honey Badger
+            "Accuracy": 1.1,
+            "Recoil":-8,
+            "Loudness":-33,
+            "Ergonomics": 0,
+            "Velocity":0.9,
+            "DurabilityBurnModificator":1.12
+        },*/
+        "6130c43c67085e45ef1405a1":{   // AR-10 KAC QDC 7.62x51 Muzzle Brake Kit
+            "Accuracy": 1.03,
+            "Recoil":-16,
+            "Ergonomics": -1,
+            "HeatFactor":0.842,
+            "DurabilityBurnModificator": 0.96
+        },
+        "652911e650dc782999054b9d":{   // Spear Suppressor
+            "Recoil":-31,
+            "Ergonomics": -23,
+            "Loudness":-30,
+            "Velocity":1.09,
+            "DurabilityBurnModificator":1.12
+        }
+    }/*,
+
+    "Bullets":{
+
+        "5efb0cabfb3e451d70735af5": {  //.45 AP
+            "Penetration": 44,
+            "Damage": 80,
+            "ammoAccr": -5,
+            "ammoRec": 7,
+            "ArmorDamage": 48,
+            "HeatFactor": 1.23,
+            "DurabilityBurnModificator": 1.7
+        },
+        "64b8725c4b75259c590fa899": {  //.300 .CBJ
+            "Penetration": 48,
+            "Damage": 58,
+            "ammoAccr": 0,
+            "ammoRec": 0,
+            "ArmorDamage": 57,
+            "HeatFactor": 1.6,
+            "DurabilityBurnModificator": 1.1
+        },
+        "619636be6db0f2477964e710": {  //.300 Blackout AP
+            "Penetration": 55,
+            "Damage": 60,
+            "ammoAccr": 0,
+            "ammoRec": 1,
+            "ArmorDamage": 60,
+            "HeatFactor": 1.7,
+            "DurabilityBurnModificator": 1.25
+        },
+        "5d6e68a8a4b9360b6c0d54e2": {  //AP-20
+            "Penetration": 47,
+            "Damage": 164,
+            "ammoAccr": 80,
+            "ammoRec": 50,
+            "ArmorDamage": 48,
+            "HeatFactor": 2.4849,
+            "DurabilityBurnModificator": 2.2
+        },
+        "5e85aa1a988a8701445df1f5": {  //Barrikada Slug
+            "Penetration": 54,
+            "Damage": 192,
+            "ammoAccr": -5,
+            "ammoRec": 25,
+            "ArmorDamage": 75,
+            "HeatFactor": 3.325,
+            "DurabilityBurnModificator": 2.77
+        },        
+        "573719df2459775a626ccbc2": {  //9x18mm PM PBM gzh
+            "Penetration": 40,
+            "Damage": 52,
+            "ammoAccr": 0,
+            "ammoRec": 4,
+            "ArmorDamage": 30,
+            "HeatFactor": 1.14,
+            "DurabilityBurnModificator": 1.7
+        },
+        "573603562459776430731618": {  //7.62x25mm TT Pst gzh
+            "Penetration": 40,
+            "Damage": 55,
+            "ammoAccr": 0,
+            "ammoRec": 0,
+            "ArmorDamage": 36,
+            "HeatFactor": 1.0738,
+            "DurabilityBurnModificator": 1.4
+        },
+        "5c925fa22e221601da359b7b": {  //9x19mm AP 6.3
+            "Penetration": 30,
+            "Damage": 65,
+            "ammoAccr": 0,
+            "ammoRec": 0,
+            "ArmorDamage": 48,
+            "HeatFactor": 1.13,
+            "DurabilityBurnModificator": 1.35
+        },
+        "5efb0da7a29a85116f6ea05f": {  //9x19mm PBP gzh
+            "Penetration": 44,
+            "Damage": 57,
+            "ammoAccr": 5,
+            "ammoRec": 2,
+            "ArmorDamage": 55,
+            "HeatFactor": 1.19,
+            "DurabilityBurnModificator": 1.8
+        },
+        "5a26ac0ec4a28200741e1e18": {  //9x21mm BT gzh
+            "Penetration": 32,
+            "Damage": 59,
+            "ammoAccr": -5,
+            "ammoRec": 5,
+            "ArmorDamage": 42,
+            "HeatFactor": 1.25,
+            "DurabilityBurnModificator": 1.4
+        },
+        "6576f4708ca9c4381d16cd9d": {  //9x21mm 7N42 "Zubilo"
+            "Penetration": 38,
+            "Damage": 52,
+            "ammoAccr": -3,
+            "ammoRec": 7,
+            "ArmorDamage": 47,
+            "HeatFactor": 1.45,
+            "DurabilityBurnModificator": 1.5
+        },
+        "62330b3ed4dc74626d570b95": {  //.357 Magnum FMJ
+            "Penetration": 42,
+            "Damage": 85,
+            "ammoAccr": 0,
+            "ammoRec": 12,
+            "ArmorDamage": 54,
+            "HeatFactor": 2.27,
+            "DurabilityBurnModificator": 1.5
+        },
+        "5cc80f67e4a949035e43bbba": {  //5.7x28mm SB193
+            "Penetration": 32,
+            "Damage": 66,
+            "ammoAccr": 10,
+            "ammoRec": -15,
+            "ArmorDamage": 37,
+            "HeatFactor": 0.936,
+            "DurabilityBurnModificator": 0.75
+        },
+        "5cc80f38e4a949001152b560": {  //5.7x28mm SS190
+            "Penetration": 37,
+            "Damage": 59,
+            "ammoAccr": 0,
+            "ammoRec": 0,
+            "ArmorDamage": 43,
+            "HeatFactor": 1.1,
+            "DurabilityBurnModificator": 1.1
+        },
+        "5ba26835d4351e0035628ff5": {  //4.6x30mm AP SX
+            "Penetration": 53,
+            "Damage": 44,
+            "ammoAccr": 0,
+            "ammoRec": 5,
+            "ArmorDamage": 52,
+            "HeatFactor": 1.1,
+            "DurabilityBurnModificator": 1.5
+        },
+        "5c0d688c86f77413ae3407b2": {  //9x39mm BP gs
+            "Penetration": 54,
+            "Damage": 67,
+            "ammoAccr": 10,
+            "ammoRec": 6,
+            "ArmorDamage": 69,
+            "HeatFactor": 1.1,
+            "DurabilityBurnModificator": 1.1
+        },
+        "5f0596629e22f464da6bbdd9": {  //.366 TKM AP-M
+            "Penetration": 42,
+            "Damage": 90,
+            "ammoAccr": -12,
+            "ammoRec": 35,
+            "ArmorDamage": 60,
+            "HeatFactor": 2.27,
+            "DurabilityBurnModificator": 1.9
+        },
+        "5c0d5e4486f77478390952fe": {  //5.45x39mm PPBS gs "Igolnik"
+            "Penetration": 62,
+            "Damage": 45,
+            "ammoAccr": -2,
+            "ammoRec": 9,
+            "ArmorDamage": 67,
+            "HeatFactor": 1.1,
+            "DurabilityBurnModificator": 1.5
+        },
+        "54527ac44bdc2d36668b4567": {  //5.56x45mm M855A1
+            "Penetration": 49,
+            "Damage": 57,
+            "ammoAccr": -2,
+            "ammoRec": 0,
+            "ArmorDamage": 54,
+            "HeatFactor": 1.5,
+            "DurabilityBurnModificator": 1.3
+        },
+        "59e690b686f7746c9f75e848": {  //5.56x45mm M995
+            "Penetration": 55,
+            "Damage": 52,
+            "ammoAccr": -7,
+            "ammoRec": 3,
+            "ArmorDamage": 57,
+            "HeatFactor": 1.6,
+            "DurabilityBurnModificator": 1.4
+        },
+        "601949593ae8f707c4608daa": {  //5.56x45mm SSA AP
+            "Penetration": 62,
+            "Damage": 48,
+            "ammoAccr": -5,
+            "ammoRec": 5,
+            "ArmorDamage": 64,
+            "HeatFactor": 1.7,
+            "DurabilityBurnModificator": 1.5
+        },
+        "59e0d99486f7744a32234762": {  //7.62x39mm BP gzh
+            "Penetration": 47,
+            "Damage": 68,
+            "ammoAccr": -1,
+            "ammoRec": 5,
+            "ArmorDamage": 63,
+            "HeatFactor": 1.5,
+            "DurabilityBurnModificator": 1.2
+        },
+        "601aa3d2b2bcb34913271e6d": {  //7.62x39mm MAI AP
+            "Penetration": 58,
+            "Damage": 57,
+            "ammoAccr": -3,
+            "ammoRec": 7,
+            "ArmorDamage": 76,
+            "HeatFactor": 1.8,
+            "DurabilityBurnModificator": 1.7
+        },
+        "6529243824cbe3c74a05e5c1": {  //6.8x51mm SIG Hybrid
+            "Penetration": 57,
+            "Damage": 72,
+            "ammoAccr": 3,
+            "ammoRec": 6,
+            "ArmorDamage": 64,
+            "HeatFactor": 2.13,
+            "DurabilityBurnModificator": 1.25
+        },
+        "5cadf6eeae921500134b2799": {  //12.7x55mm PS12B
+            "Penetration": 56,
+            "Damage": 102,
+            "ammoAccr": 0,
+            "ammoRec": 11,
+            "ArmorDamage": 57,
+            "HeatFactor": 2.11,
+            "DurabilityBurnModificator": 1.6
+        },
+        "5efb0c1bd79ff02a1f5e68d9": {  //7.62x51mm M993
+            "Penetration": 70,
+            "Damage": 77,
+            "ammoAccr": 5,
+            "ammoRec": 0,
+            "ArmorDamage": 85,
+            "HeatFactor": 2.0,
+            "DurabilityBurnModificator": 1.5
+        }
+    }*/
+}
