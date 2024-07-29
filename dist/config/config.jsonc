@@ -355,8 +355,8 @@
             "DurabilityBurnModificator": 1.5
         }
     },
-    "FaceShields":{
-        "66326bfd46817c660d015131":{
+    "ArmoredMasks":{
+        "66326bfd46817c660d015131":{ //Artem Ballistic Faceshield
             "armorClass": 4,
             "Durability": 40,
             "MaxDurability": 40,
@@ -368,7 +368,7 @@
                 "ParietalHead"
             ]
         },
-        "6570aead4d84f81fd002a033":{
+        "6570aead4d84f81fd002a033":{ //Death Shadow Mask
             "armorClass": 4,
             "Durability": 40,
             "MaxDurability": 40,
