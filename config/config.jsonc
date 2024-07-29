@@ -20,7 +20,7 @@
         "5c1bc5af2e221602b412949b":{  // RK-2
             "Ergonomics": -4,
             "Recoil": -8
-        }/*,
+        },
         "CCG_VERT_GRIP_2":{  // SAKO Vertical Foregrip OD - Moxopixel TGC
             "Ergonomics": 6,
             "Recoil": -4
@@ -28,7 +28,7 @@
         "CCG_VERT_GRIP_2_BLK":{  // SAKO Vertical Foregrip - Moxopixel TGC
             "Ergonomics": 6,
             "Recoil": -4
-        }*/
+        }
     },
     "Suppressors":{
         "638612b607dfed1ccb7206ba":{ //M4sdk supprressor
@@ -40,7 +40,7 @@
             "HeatFactor":1.06,
             "CoolFactor":1.2,
             "DurabilityBurnModificator":1.25
-        },/*
+        },
         "CCG_WRAPPED_SILENCER":{   // Wrapped .556 suppressor
             "Accuracy": 0,
             "Recoil":-21,
@@ -50,7 +50,7 @@
             "HeatFactor":1.1,
             "CoolFactor":1.03,
             "DurabilityBurnModificator":1.25
-        },*/
+        },
         "5dfa3d2b0dee1b22f862eade":{   // QDC 7.62
             "Recoil":-8,
             "Loudness":-30,
@@ -58,7 +58,7 @@
             "HeatFactor": 0.977,
             "CoolFactor": 1.06,
             "DurabilityBurnModificator":1.12
-        },/*
+        },
         "suppressor_qhb_standard_300blkR":{   // Honey Badger
             "Accuracy": 1.1,
             "Recoil":-8,
@@ -66,7 +66,7 @@
             "Ergonomics": 0,
             "Velocity":0.9,
             "DurabilityBurnModificator":1.12
-        },*/
+        },
         "6130c43c67085e45ef1405a1":{   // AR-10 KAC QDC 7.62x51 Muzzle Brake Kit
             "Accuracy": 1.03,
             "Recoil":-16,
