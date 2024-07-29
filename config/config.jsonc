@@ -367,6 +367,18 @@
                 "Eyes",
                 "ParietalHead"
             ]
+        },
+        "6570aead4d84f81fd002a033":{
+            "armorClass": 4,
+            "Durability": 40,
+            "MaxDurability": 40,
+            "BlocksHeadwear": true,
+            "armorColliders": [
+                "HeadCommon",
+                "Jaw",
+                "Eyes",
+                "ParietalHead"
+            ]
         }
     }
 }
