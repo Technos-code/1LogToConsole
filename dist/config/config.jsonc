@@ -355,6 +355,9 @@
             "DurabilityBurnModificator": 1.5
         }
     },
+    "Stocks":{
+
+    },
     "ArmoredMasks":{
         "66326bfd46817c660d015131":{ //Artem Ballistic Faceshield
             "armorClass": 4,
@@ -378,6 +381,17 @@
                 "Jaw",
                 "Eyes",
                 "ParietalHead"
+            ],
+            "price": 450000
+        },
+        "5a16b7e1fcdbcb00165aa6c9":{ //Ops-Core FAST multi-hit ballistic face shield
+            "armorClass": 4,
+            "Durability": 40,
+            "MaxDurability": 40,
+            "armorColliders": [
+                "HeadCommon",
+                "Jaw",
+                "Eyes"
             ]
         }
     }
