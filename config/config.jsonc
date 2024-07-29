@@ -59,7 +59,7 @@
             "CoolFactor": 1.06,
             "DurabilityBurnModificator":1.12
         },
-        "suppressor_qhb_standard_300blkR":{   // Honey Badger
+        "suppressor_qhb_standard_300blk":{   // Honey Badger
             "Accuracy": 1.1,
             "Recoil":-8,
             "Loudness":-33,
