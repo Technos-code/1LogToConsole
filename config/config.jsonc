@@ -1,7 +1,7 @@
 {
     "Foregrips":{
 
-        "5c1cd46f2e22164bef5cfedb": {   //Zenit rk-1 Canted Grip test new test
+        "5c1cd46f2e22164bef5cfedb": {   //Zenit rk-1 Canted Grip
             "Ergonomics": 5,
             "Recoil": -5
         },
@@ -81,8 +81,7 @@
             "Velocity":1.09,
             "DurabilityBurnModificator":1.12
         }
-    }/*,
-
+    },
     "Bullets":{
 
         "5efb0cabfb3e451d70735af5": {  //.45 AP
@@ -355,5 +354,19 @@
             "HeatFactor": 2.0,
             "DurabilityBurnModificator": 1.5
         }
-    }*/
+    },
+    "FaceShields":{
+        "66326bfd46817c660d015131":{
+            "armorClass": 4,
+            "Durability": 35,
+            "MaxDurability": 35,
+            "BlocksHeadwear": true,
+            "armorColliders": [
+                "HeadCommon",
+                "Jaw",
+                "Eyes",
+                "ParietalHead"
+            ]
+        }
+    }
 }
