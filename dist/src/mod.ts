@@ -125,9 +125,14 @@ class Mod implements IPostDBLoadMod
             tables.templates.items[armoredmaskId]._props.Durability = armoredmasksSettings.Durability;   
             tables.templates.items[armoredmaskId]._props.MaxDurability = armoredmasksSettings.MaxDurability;       
             tables.templates.items[armoredmaskId]._props.BlocksHeadwear = armoredmasksSettings.BlocksHeadwear;        
-            tables.templates.items[armoredmaskId]._props.armorColliders = armoredmasksSettings.armorColliders;     
-            tables.templates.handbook[armoredmaskId].HandbookItem.Price = armoredmasksSettings.price;
+            tables.templates.items[armoredmaskId]._props.armorColliders = armoredmasksSettings.armorColliders;  
+            
+            if (armoredmasksSettings?.price !== undefined) 
+            {
+                tables.templates.handbook[armoredmaskId].HandbookItem.Price = armoredmasksSettings.price;
+            }   
         }
+        
 
     }
 }
