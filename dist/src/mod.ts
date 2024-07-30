@@ -52,6 +52,7 @@ interface StockSettings
 {
     Ergonomics: number;
     Recoil: number;
+    Accuracy: number;
     fleaprice: number;
 }
 
@@ -63,7 +64,6 @@ interface ArmoredMaskandHelmetsSettings
     BlocksHeadwear: boolean;
     armorColliders: string[];
     fleaprice: number;
-    conflictingItems: string[];
 }
 
 interface FleaBalanceSettings
@@ -135,7 +135,9 @@ class Mod implements IPostDBLoadMod
             if (tables.templates.items[stocksId] === undefined) continue;
     
             tables.templates.items[stocksId]._props.Ergonomics = stockSettings.Ergonomics;
-            tables.templates.items[stocksId]._props.Recoil = stockSettings.Recoil;            
+            tables.templates.items[stocksId]._props.Recoil = stockSettings.Recoil;  
+            tables.templates.items[stocksId]._props.Accuracy = stockSettings.Accuracy;
+            tables.templates.prices[stocksId] = stockSettings.fleaprice;
         }
         for (const armoredmaskId in this.modConfig.ArmoredMasksandHelmets) 
         {
@@ -148,7 +150,6 @@ class Mod implements IPostDBLoadMod
             tables.templates.items[armoredmaskId]._props.MaxDurability = armoredmasksSettings.MaxDurability;       
             tables.templates.items[armoredmaskId]._props.BlocksHeadwear = armoredmasksSettings.BlocksHeadwear;        
             tables.templates.items[armoredmaskId]._props.armorColliders = armoredmasksSettings.armorColliders; 
-            tables.templates.items[armoredmaskId]._props.ConflictingItems = armoredmasksSettings.conflictingItems; 
             tables.templates.prices[armoredmaskId] = armoredmasksSettings.fleaprice;
             
         }
