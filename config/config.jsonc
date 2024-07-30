@@ -438,7 +438,7 @@
                 "HeadCommon",
                 "Jaw",
                 "Eyes"
-            ],
+            ]
         },
         "5e00cdd986f7747473332240":{ //Team Wendy EXFIL Ballistic face shield (Black)
             "armorClass": 3,
@@ -552,7 +552,7 @@
                 "NeckFront"
             ]
         },
-        "heavyblack":{ //Tac-Kek Heavy Trooper mask
+        "heavy":{ //Tac-Kek Heavy Trooper mask
             "armorClass": 4,
             "Durability": 45,
             "MaxDurability": 45,
