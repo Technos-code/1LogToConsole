@@ -550,7 +550,7 @@
             ],
             "fleaprice": 400000
         },
-        "heavy":{ //Tac-Kek Heavy Trooper mask
+        "heavy":{ //Tac-Kek Heavy Wolf Trooper mask
             "armorClass": 4,
             "Durability": 45,
             "MaxDurability": 45,
