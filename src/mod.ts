@@ -14,12 +14,14 @@ interface ModConfig
     Suppressors: Record<string, SuppressorSettings>;
     Stocks: Record<string, StockSettings>;
     ArmoredMasks: Record<string, ArmoredMaskSettings>;
+    FleaBalance: Record<string, ArmoredMaskSettings>;
 }
 
 interface ForegripSettings 
 {
     Ergonomics: number;
     Recoil: number;
+    fleaprice: number;
 }
 
 interface BulletSettings
@@ -43,12 +45,14 @@ interface SuppressorSettings
     HeatFactor: number;
     CoolFactor: number;
     DurabilityBurnModificator: number;
+    fleaprice: number;
 }
 
 interface StockSettings 
 {
     Ergonomics: number;
     Recoil: number;
+    fleaprice: number;
 }
 
 interface ArmoredMaskSettings
@@ -58,9 +62,13 @@ interface ArmoredMaskSettings
     MaxDurability: number;
     BlocksHeadwear: boolean;
     armorColliders: string[];
-    newPrice: number;
+    fleaprice: number;
 }
 
+interface FleamarketBalance
+{
+    fleaprice: number;
+}
 
 class Mod implements IPostDBLoadMod
 {
@@ -83,7 +91,8 @@ class Mod implements IPostDBLoadMod
             const foregripSettings = this.modConfig.Foregrips[foregripId];
 
             tables.templates.items[foregripId]._props.Ergonomics = foregripSettings.Ergonomics;
-            tables.templates.items[foregripId]._props.Recoil = foregripSettings.Recoil;            
+            tables.templates.items[foregripId]._props.Recoil = foregripSettings.Recoil;        
+            tables.templates.prices[foregripId] = foregripSettings.fleaprice;
         }
         for (const bulletId in this.modConfig.Bullets) 
         {
@@ -109,6 +118,7 @@ class Mod implements IPostDBLoadMod
             tables.templates.items[suppressorId]._props.HeatFactor = suppressorSettings.HeatFactor;
             tables.templates.items[suppressorId]._props.DurabilityBurnModificator = suppressorSettings.DurabilityBurnModificator;
             tables.templates.items[suppressorId]._props.CoolFactor = suppressorSettings.CoolFactor;
+            tables.templates.prices[suppressorId] = suppressorSettings.fleaprice;
         }
         for (const stocksId in this.modConfig.Stocks) 
         {
@@ -127,9 +137,14 @@ class Mod implements IPostDBLoadMod
             tables.templates.items[armoredmaskId]._props.MaxDurability = armoredmasksSettings.MaxDurability;       
             tables.templates.items[armoredmaskId]._props.BlocksHeadwear = armoredmasksSettings.BlocksHeadwear;        
             tables.templates.items[armoredmaskId]._props.armorColliders = armoredmasksSettings.armorColliders;  
-            tables.templates.prices[armoredmaskId] = armoredmasksSettings.newPrice;
+            tables.templates.prices[armoredmaskId] = armoredmasksSettings.fleaprice;
         }
-        
+        for (const itemID in this.modConfig.FleaBalance)
+        {
+            const fleabalanceSettings = this.modConfig.FleaBalance[itemID];
+
+            tables.templates.prices[itemID] = fleabalanceSettings.fleaprice;
+        }
 
     }
 }
