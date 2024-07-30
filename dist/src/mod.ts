@@ -58,7 +58,7 @@ interface ArmoredMaskSettings
     MaxDurability: number;
     BlocksHeadwear: boolean;
     armorColliders: string[];
-    price: number;
+    newPrice: number;
 }
 
 
@@ -120,25 +120,14 @@ class Mod implements IPostDBLoadMod
         for (const armoredmaskId in this.modConfig.ArmoredMasks) 
         {
             const armoredmasksSettings = this.modConfig.ArmoredMasks[armoredmaskId];
-        
-            if (armoredmasksSettings?.price === undefined) continue;
+
 
             tables.templates.items[armoredmaskId]._props.armorClass = armoredmasksSettings.armorClass;
             tables.templates.items[armoredmaskId]._props.Durability = armoredmasksSettings.Durability;   
             tables.templates.items[armoredmaskId]._props.MaxDurability = armoredmasksSettings.MaxDurability;       
             tables.templates.items[armoredmaskId]._props.BlocksHeadwear = armoredmasksSettings.BlocksHeadwear;        
             tables.templates.items[armoredmaskId]._props.armorColliders = armoredmasksSettings.armorColliders;  
-            
-            if (armoredmasksSettings?.price !== undefined) continue;
-
-            const handBookItems = tables.templates.handbook.Items;
-
-            for (const item of handBookItems)
-            {
-                if (item.Id !== armoredmaskId) continue;
-                  
-                item.Price = armoredmasksSettings.price;
-            }
+            tables.templates.prices[armoredmaskId] = armoredmasksSettings.newPrice;
         }
         
 
