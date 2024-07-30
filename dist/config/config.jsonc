@@ -3,31 +3,38 @@
 
         "5c1cd46f2e22164bef5cfedb": {   //Zenit rk-1 Canted Grip
             "Ergonomics": 5,
-            "Recoil": -5
+            "Recoil": -5,
+            "fleaprice": 450000
         },
         "65169d5b30425317755f8e25": {  // Pillau P-2 Tac Foregrip Red
             "Ergonomics": 6,
-            "Recoil": -4
+            "Recoil": -4,
+            "fleaprice": 450000
         },
         "5cf4fb76d7f00c065703d3ac": {  // Pillau P-2 Tac Foregrip Black
             "Ergonomics": 6,
-            "Recoil": -4
+            "Recoil": -4,
+            "fleaprice": 450000
         },
         "5a7dbfc1159bd40016548fde":{  // Cqr spacegun Foregrip
             "Ergonomics": 6,
-            "Recoil": -6
+            "Recoil": -6,
+            "fleaprice": 450000
         },
         "5c1bc5af2e221602b412949b":{  // RK-2
             "Ergonomics": -4,
-            "Recoil": -8
+            "Recoil": -8,
+            "fleaprice": 450000
         },
         "CCG_VERT_GRIP_2":{  // SAKO Vertical Foregrip OD - Moxopixel TGC
             "Ergonomics": 6,
-            "Recoil": -4
+            "Recoil": -4,
+            "fleaprice": 450000
         },
         "CCG_VERT_GRIP_2_BLK":{  // SAKO Vertical Foregrip - Moxopixel TGC
             "Ergonomics": 6,
-            "Recoil": -4
+            "Recoil": -4,
+            "fleaprice": 450000
         }
     },
     "Suppressors":{
@@ -39,7 +46,8 @@
             "Velocity":0.6,
             "HeatFactor":1.06,
             "CoolFactor":1.2,
-            "DurabilityBurnModificator":1.25
+            "DurabilityBurnModificator":1.25,
+            "fleaprice": 450000
         },
         "CCG_WRAPPED_SILENCER":{   // Wrapped .556 suppressor
             "Accuracy": 0,
@@ -49,7 +57,8 @@
             "Velocity":0.7,
             "HeatFactor":1.1,
             "CoolFactor":1.03,
-            "DurabilityBurnModificator":1.25
+            "DurabilityBurnModificator":1.25,
+            "fleaprice": 450000
         },
         "5dfa3d2b0dee1b22f862eade":{   // QDC 7.62
             "Recoil":-8,
@@ -57,7 +66,8 @@
             "Velocity":1.09,
             "HeatFactor": 0.977,
             "CoolFactor": 1.06,
-            "DurabilityBurnModificator":1.12
+            "DurabilityBurnModificator":1.12,
+            "fleaprice": 450000
         },
         "suppressor_qhb_standard_300blk":{   // Honey Badger
             "Accuracy": 1.1,
@@ -65,21 +75,24 @@
             "Loudness":-33,
             "Ergonomics": 0,
             "Velocity":0.9,
-            "DurabilityBurnModificator":1.12
+            "DurabilityBurnModificator":1.12,
+            "fleaprice": 450000
         },
         "6130c43c67085e45ef1405a1":{   // AR-10 KAC QDC 7.62x51 Muzzle Brake Kit
             "Accuracy": 1.03,
             "Recoil":-16,
             "Ergonomics": -1,
             "HeatFactor":0.842,
-            "DurabilityBurnModificator": 0.96
+            "DurabilityBurnModificator": 0.96,
+            "fleaprice": 450000
         },
         "652911e650dc782999054b9d":{   // Spear Suppressor
             "Recoil":-31,
             "Ergonomics": -23,
             "Loudness":-30,
             "Velocity":1.09,
-            "DurabilityBurnModificator":1.12
+            "DurabilityBurnModificator":1.12,
+            "fleaprice": 450000
         }
     },
     "Bullets":{
@@ -358,20 +371,34 @@
     "Stocks":{
 
     },
-    "ArmoredMasks":{
+    "ArmoredMasksandHelmets":{
         "66326bfd46817c660d015131":{ //Artem Ballistic Faceshield
             "armorClass": 4,
-            "Durability": 40,
-            "MaxDurability": 40,
+            "Durability": 35,
+            "MaxDurability": 35,
             "BlocksHeadwear": true,
             "armorColliders": [
                 "HeadCommon",
                 "Jaw",
                 "Eyes",
                 "ParietalHead"
-            ]
+            ],
+            "fleaprice": 450000
         },
-        "6570aead4d84f81fd002a033":{ //Death Shadow Mask
+        "66326bfd46817c660d015132":{ //Artem Ballistic Faceshield(Worn)
+            "armorClass": 4,
+            "Durability": 35,
+            "MaxDurability": 35,
+            "BlocksHeadwear": true,
+            "armorColliders": [
+                "HeadCommon",
+                "Jaw",
+                "Eyes",
+                "ParietalHead"
+            ],
+            "fleaprice": 450000
+        },
+        "657089638db3adca1009f4ca":{ //Atomic Defense CQCM ballistic mask (Black)
             "armorClass": 4,
             "Durability": 40,
             "MaxDurability": 40,
@@ -382,17 +409,198 @@
                 "Eyes",
                 "ParietalHead"
             ],
-            "newPrice": 450000
+            "fleaprice": 450000
         },
-        "5a16b7e1fcdbcb00165aa6c9":{ //Ops-Core FAST multi-hit ballistic face shield
-            "armorClass": 4,
+        "6570aead4d84f81fd002a033":{ //Death Shadow Mask
+            "armorClass": 3,
             "Durability": 40,
             "MaxDurability": 40,
+            "BlocksEarpiece": false,
+            "BlocksEyewear": true,
+            "BlocksHeadwear": true,
+            "BlocksFaceCover": false,
+            "armorColliders": [
+                "HeadCommon",
+                "Jaw",
+                "Eyes"
+            ],
+            "fleaprice": 200000
+        },
+        "5a16b7e1fcdbcb00165aa6c9":{ //Ops-Core FAST multi-hit ballistic face shield
+            "armorClass": 3,
+            "Durability": 40,
+            "MaxDurability": 40,
+            "BlocksEarpiece": false,
+            "BlocksEyewear": true,
+            "BlocksHeadwear": true,
+            "BlocksFaceCover": false,
+            "armorColliders": [
+                "HeadCommon",
+                "Jaw",
+                "Eyes"
+            ],
+        },
+        "5e00cdd986f7747473332240":{ //Team Wendy EXFIL Ballistic face shield (Black)
+            "armorClass": 3,
+            "Durability": 45,
+            "MaxDurability": 45,
+            "BlocksEarpiece": false,
+            "BlocksEyewear": true,
+            "BlocksHeadwear": false,
+            "BlocksFaceCover": false,
             "armorColliders": [
                 "HeadCommon",
                 "Jaw",
                 "Eyes"
             ]
+        },
+        "5e01f37686f774773c6f6c15":{ //Team Wendy EXFIL Ballistic face shield (Coyote Brown)
+            "armorClass": 3,
+            "Durability": 45,
+            "MaxDurability": 45,
+            "BlocksEarpiece": false,
+            "BlocksEyewear": true,
+            "BlocksHeadwear": false,
+            "BlocksFaceCover": false,
+            "armorColliders": [
+                "HeadCommon",
+                "Jaw",
+                "Eyes"
+            ]
+        },
+        "5ea058e01dbce517f324b3e2":{ //Tac-Kek Heavy Trooper mask for Ops-Core-type helmets (Vanilla)
+            "armorClass": 2,
+            "Durability": 45,
+            "MaxDurability": 45,
+            "BlocksEarpiece": false,
+            "BlocksEyewear": true,
+            "BlocksHeadwear": false,
+            "BlocksFaceCover": true,
+            "conflictingitems": 
+            [
+                "6570aead4d84f81fd002a033"
+            ],
+            "armorColliders": 
+            [
+                "HeadCommon",
+                "Jaw",
+                "Eyes",
+                "ParietalHead",
+                "NeckFront"
+            ]
+        },
+        "heavytan":{ //Tac-Kek Heavy Trooper mask Tan 
+            "armorClass": 2,
+            "Durability": 45,
+            "MaxDurability": 45,
+            "BlocksEarpiece": false,
+            "BlocksEyewear": true,
+            "BlocksHeadwear": false,
+            "BlocksFaceCover": true,
+            "conflictingitems": 
+            [
+                "6570aead4d84f81fd002a033"
+            ],
+            "armorColliders": 
+            [
+                "HeadCommon",
+                "Jaw",
+                "Eyes",
+                "ParietalHead",
+                "NeckFront"
+            ]
+        },
+        "heavyblack":{ //Tac-Kek Heavy Trooper mask Black
+            "armorClass": 2,
+            "Durability": 45,
+            "MaxDurability": 45,
+            "BlocksEarpiece": false,
+            "BlocksEyewear": true,
+            "BlocksHeadwear": false,
+            "BlocksFaceCover": true,
+            "conflictingitems": 
+            [
+                "6570aead4d84f81fd002a033"
+            ],
+            "armorColliders": 
+            [
+                "HeadCommon",
+                "Jaw",
+                "Eyes",
+                "ParietalHead",
+                "NeckFront"
+            ]
+        },
+        "heavycoyote":{ //Tac-Kek Heavy Trooper mask Coyote
+            "armorClass": 3,
+            "Durability": 45,
+            "MaxDurability": 45,
+            "BlocksEarpiece": false,
+            "BlocksEyewear": true,
+            "BlocksHeadwear": false,
+            "BlocksFaceCover": true,
+            "conflictingitems": 
+            [
+                "6570aead4d84f81fd002a033"
+            ],
+            "armorColliders": 
+            [
+                "HeadCommon",
+                "Jaw",
+                "Eyes",
+                "ParietalHead",
+                "NeckFront"
+            ]
+        },
+        "heavyblack":{ //Tac-Kek Heavy Trooper mask
+            "armorClass": 4,
+            "Durability": 45,
+            "MaxDurability": 45,
+            "BlocksEarpiece": false,
+            "BlocksEyewear": true,
+            "BlocksHeadwear": false,
+            "BlocksFaceCover": true,
+            "conflictingitems": 
+            [
+                "6570aead4d84f81fd002a033"
+            ],
+            "armorColliders": 
+            [
+                "HeadCommon",
+                "Jaw",
+                "Eyes",
+                "ParietalHead",
+                "NeckFront"
+            ]
+        },
+        "heavycult":{ //Tac-Kek Heavy Trooper Cult Mask
+            "armorClass": 4,
+            "Durability": 60,
+            "MaxDurability": 60,
+            "BlocksEarpiece": false,
+            "BlocksEyewear": true,
+            "BlocksHeadwear": false,
+            "BlocksFaceCover": true,
+            "conflictingitems": 
+            [
+                "6570aead4d84f81fd002a033"
+            ],
+            "armorColliders": 
+            [
+                "HeadCommon",
+                "Jaw",
+                "Eyes",
+                "ParietalHead",
+                "NeckFront"
+            ]
+        }
+    },
+    "FleaBalance":{
+        "57347ca924597744596b4e71":{
+            "fleaprice": 850000
+        },
+        "5c0530ee86f774697952d952":{
+            "fleaprice": 1100000
         }
     }
 }

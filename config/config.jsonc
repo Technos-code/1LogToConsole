@@ -371,8 +371,34 @@
     "Stocks":{
 
     },
-    "ArmoredMasks":{
+    "ArmoredMasksandHelmets":{
         "66326bfd46817c660d015131":{ //Artem Ballistic Faceshield
+            "armorClass": 4,
+            "Durability": 35,
+            "MaxDurability": 35,
+            "BlocksHeadwear": true,
+            "armorColliders": [
+                "HeadCommon",
+                "Jaw",
+                "Eyes",
+                "ParietalHead"
+            ],
+            "fleaprice": 450000
+        },
+        "66326bfd46817c660d015132":{ //Artem Ballistic Faceshield(Worn)
+            "armorClass": 4,
+            "Durability": 35,
+            "MaxDurability": 35,
+            "BlocksHeadwear": true,
+            "armorColliders": [
+                "HeadCommon",
+                "Jaw",
+                "Eyes",
+                "ParietalHead"
+            ],
+            "fleaprice": 450000
+        },
+        "657089638db3adca1009f4ca":{ //Atomic Defense CQCM ballistic mask (Black)
             "armorClass": 4,
             "Durability": 40,
             "MaxDurability": 40,
@@ -386,33 +412,195 @@
             "fleaprice": 450000
         },
         "6570aead4d84f81fd002a033":{ //Death Shadow Mask
-            "armorClass": 4,
+            "armorClass": 3,
             "Durability": 40,
             "MaxDurability": 40,
+            "BlocksEarpiece": false,
+            "BlocksEyewear": true,
             "BlocksHeadwear": true,
-            "armorColliders": [
-                "HeadCommon",
-                "Jaw",
-                "Eyes",
-                "ParietalHead"
-            ],
-            "fleaprice": 450000
-        },
-        "5a16b7e1fcdbcb00165aa6c9":{ //Ops-Core FAST multi-hit ballistic face shield
-            "armorClass": 4,
-            "Durability": 40,
-            "MaxDurability": 40,
+            "BlocksFaceCover": false,
             "armorColliders": [
                 "HeadCommon",
                 "Jaw",
                 "Eyes"
             ],
-            "fleaprice": 450000
+            "fleaprice": 200000
+        },
+        "5a16b7e1fcdbcb00165aa6c9":{ //Ops-Core FAST multi-hit ballistic face shield
+            "armorClass": 3,
+            "Durability": 40,
+            "MaxDurability": 40,
+            "BlocksEarpiece": false,
+            "BlocksEyewear": true,
+            "BlocksHeadwear": true,
+            "BlocksFaceCover": false,
+            "armorColliders": [
+                "HeadCommon",
+                "Jaw",
+                "Eyes"
+            ],
+        },
+        "5e00cdd986f7747473332240":{ //Team Wendy EXFIL Ballistic face shield (Black)
+            "armorClass": 3,
+            "Durability": 45,
+            "MaxDurability": 45,
+            "BlocksEarpiece": false,
+            "BlocksEyewear": true,
+            "BlocksHeadwear": false,
+            "BlocksFaceCover": false,
+            "armorColliders": [
+                "HeadCommon",
+                "Jaw",
+                "Eyes"
+            ]
+        },
+        "5e01f37686f774773c6f6c15":{ //Team Wendy EXFIL Ballistic face shield (Coyote Brown)
+            "armorClass": 3,
+            "Durability": 45,
+            "MaxDurability": 45,
+            "BlocksEarpiece": false,
+            "BlocksEyewear": true,
+            "BlocksHeadwear": false,
+            "BlocksFaceCover": false,
+            "armorColliders": [
+                "HeadCommon",
+                "Jaw",
+                "Eyes"
+            ]
+        },
+        "5ea058e01dbce517f324b3e2":{ //Tac-Kek Heavy Trooper mask for Ops-Core-type helmets (Vanilla)
+            "armorClass": 2,
+            "Durability": 45,
+            "MaxDurability": 45,
+            "BlocksEarpiece": false,
+            "BlocksEyewear": true,
+            "BlocksHeadwear": false,
+            "BlocksFaceCover": true,
+            "conflictingitems": 
+            [
+                "6570aead4d84f81fd002a033"
+            ],
+            "armorColliders": 
+            [
+                "HeadCommon",
+                "Jaw",
+                "Eyes",
+                "ParietalHead",
+                "NeckFront"
+            ]
+        },
+        "heavytan":{ //Tac-Kek Heavy Trooper mask Tan 
+            "armorClass": 2,
+            "Durability": 45,
+            "MaxDurability": 45,
+            "BlocksEarpiece": false,
+            "BlocksEyewear": true,
+            "BlocksHeadwear": false,
+            "BlocksFaceCover": true,
+            "conflictingitems": 
+            [
+                "6570aead4d84f81fd002a033"
+            ],
+            "armorColliders": 
+            [
+                "HeadCommon",
+                "Jaw",
+                "Eyes",
+                "ParietalHead",
+                "NeckFront"
+            ]
+        },
+        "heavyblack":{ //Tac-Kek Heavy Trooper mask Black
+            "armorClass": 2,
+            "Durability": 45,
+            "MaxDurability": 45,
+            "BlocksEarpiece": false,
+            "BlocksEyewear": true,
+            "BlocksHeadwear": false,
+            "BlocksFaceCover": true,
+            "conflictingitems": 
+            [
+                "6570aead4d84f81fd002a033"
+            ],
+            "armorColliders": 
+            [
+                "HeadCommon",
+                "Jaw",
+                "Eyes",
+                "ParietalHead",
+                "NeckFront"
+            ]
+        },
+        "heavycoyote":{ //Tac-Kek Heavy Trooper mask Coyote
+            "armorClass": 3,
+            "Durability": 45,
+            "MaxDurability": 45,
+            "BlocksEarpiece": false,
+            "BlocksEyewear": true,
+            "BlocksHeadwear": false,
+            "BlocksFaceCover": true,
+            "conflictingitems": 
+            [
+                "6570aead4d84f81fd002a033"
+            ],
+            "armorColliders": 
+            [
+                "HeadCommon",
+                "Jaw",
+                "Eyes",
+                "ParietalHead",
+                "NeckFront"
+            ]
+        },
+        "heavyblack":{ //Tac-Kek Heavy Trooper mask
+            "armorClass": 4,
+            "Durability": 45,
+            "MaxDurability": 45,
+            "BlocksEarpiece": false,
+            "BlocksEyewear": true,
+            "BlocksHeadwear": false,
+            "BlocksFaceCover": true,
+            "conflictingitems": 
+            [
+                "6570aead4d84f81fd002a033"
+            ],
+            "armorColliders": 
+            [
+                "HeadCommon",
+                "Jaw",
+                "Eyes",
+                "ParietalHead",
+                "NeckFront"
+            ]
+        },
+        "heavycult":{ //Tac-Kek Heavy Trooper Cult Mask
+            "armorClass": 4,
+            "Durability": 60,
+            "MaxDurability": 60,
+            "BlocksEarpiece": false,
+            "BlocksEyewear": true,
+            "BlocksHeadwear": false,
+            "BlocksFaceCover": true,
+            "conflictingitems": 
+            [
+                "6570aead4d84f81fd002a033"
+            ],
+            "armorColliders": 
+            [
+                "HeadCommon",
+                "Jaw",
+                "Eyes",
+                "ParietalHead",
+                "NeckFront"
+            ]
         }
     },
-    "FleamarketBalance":{
+    "FleaBalance":{
         "57347ca924597744596b4e71":{
-            "fleaprice": 1200000
+            "fleaprice": 850000
+        },
+        "5c0530ee86f774697952d952":{
+            "fleaprice": 1100000
         }
     }
 }

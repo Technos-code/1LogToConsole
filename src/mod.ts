@@ -13,8 +13,8 @@ interface ModConfig
     Bullets: Record<string, BulletSettings>;
     Suppressors: Record<string, SuppressorSettings>;
     Stocks: Record<string, StockSettings>;
-    ArmoredMasks: Record<string, ArmoredMaskSettings>;
-    FleaBalance: Record<string, ArmoredMaskSettings>;
+    ArmoredMasksandHelmets: Record<string, ArmoredMaskandHelmetsSettings>;
+    FleaBalance: Record<string, FleaBalanceSettings>;
 }
 
 interface ForegripSettings 
@@ -55,7 +55,7 @@ interface StockSettings
     fleaprice: number;
 }
 
-interface ArmoredMaskSettings
+interface ArmoredMaskandHelmetsSettings
 {
     armorClass: number;
     Durability: number;
@@ -63,9 +63,10 @@ interface ArmoredMaskSettings
     BlocksHeadwear: boolean;
     armorColliders: string[];
     fleaprice: number;
+    conflictingItems: string[];
 }
 
-interface FleamarketBalance
+interface FleaBalanceSettings
 {
     fleaprice: number;
 }
@@ -90,6 +91,9 @@ class Mod implements IPostDBLoadMod
         {
             const foregripSettings = this.modConfig.Foregrips[foregripId];
 
+            if (tables.templates.items[foregripId] === undefined) continue;
+
+
             tables.templates.items[foregripId]._props.Ergonomics = foregripSettings.Ergonomics;
             tables.templates.items[foregripId]._props.Recoil = foregripSettings.Recoil;        
             tables.templates.prices[foregripId] = foregripSettings.fleaprice;
@@ -97,6 +101,8 @@ class Mod implements IPostDBLoadMod
         for (const bulletId in this.modConfig.Bullets) 
         {
             const bulletSettings = this.modConfig.Bullets[bulletId];
+
+            if (tables.templates.items[bulletId] === undefined) continue;
 
             tables.templates.items[bulletId]._props.PenetrationPower = bulletSettings.Penetration;
             tables.templates.items[bulletId]._props.Damage = bulletSettings.Damage;
@@ -109,6 +115,8 @@ class Mod implements IPostDBLoadMod
         for (const suppressorId in this.modConfig.Suppressors) 
         {
             const suppressorSettings = this.modConfig.Suppressors[suppressorId];
+
+            if (tables.templates.items[suppressorId] === undefined) continue;
     
             tables.templates.items[suppressorId]._props.Ergonomics = suppressorSettings.Ergonomics;
             tables.templates.items[suppressorId]._props.Recoil = suppressorSettings.Recoil;
@@ -123,25 +131,32 @@ class Mod implements IPostDBLoadMod
         for (const stocksId in this.modConfig.Stocks) 
         {
             const stockSettings = this.modConfig.Stocks[stocksId];
+
+            if (tables.templates.items[stocksId] === undefined) continue;
     
             tables.templates.items[stocksId]._props.Ergonomics = stockSettings.Ergonomics;
             tables.templates.items[stocksId]._props.Recoil = stockSettings.Recoil;            
         }
-        for (const armoredmaskId in this.modConfig.ArmoredMasks) 
+        for (const armoredmaskId in this.modConfig.ArmoredMasksandHelmets) 
         {
-            const armoredmasksSettings = this.modConfig.ArmoredMasks[armoredmaskId];
+            const armoredmasksSettings = this.modConfig.ArmoredMasksandHelmets[armoredmaskId];
 
+            if (tables.templates.items[armoredmaskId] === undefined) continue;
 
             tables.templates.items[armoredmaskId]._props.armorClass = armoredmasksSettings.armorClass;
             tables.templates.items[armoredmaskId]._props.Durability = armoredmasksSettings.Durability;   
             tables.templates.items[armoredmaskId]._props.MaxDurability = armoredmasksSettings.MaxDurability;       
             tables.templates.items[armoredmaskId]._props.BlocksHeadwear = armoredmasksSettings.BlocksHeadwear;        
-            tables.templates.items[armoredmaskId]._props.armorColliders = armoredmasksSettings.armorColliders;  
+            tables.templates.items[armoredmaskId]._props.armorColliders = armoredmasksSettings.armorColliders; 
+            tables.templates.items[armoredmaskId]._props.ConflictingItems = armoredmasksSettings.conflictingItems; 
             tables.templates.prices[armoredmaskId] = armoredmasksSettings.fleaprice;
+            
         }
         for (const itemID in this.modConfig.FleaBalance)
         {
             const fleabalanceSettings = this.modConfig.FleaBalance[itemID];
+
+            if (tables.templates.items[itemID] === undefined) continue;
 
             tables.templates.prices[itemID] = fleabalanceSettings.fleaprice;
         }
